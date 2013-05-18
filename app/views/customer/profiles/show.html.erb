@@ -1,0 +1,89 @@
+<div id="content-header">
+  <h1>Your Profile</h1>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="span1"></div>
+    <div class="span7 offset1">
+      <div class="widget-box">
+        <div class="widget-title">
+          <span class="icon">
+            <i class="icon-user"></i>
+          </span>
+          <h5><%= @customer.full_name %></h5>
+        </div>
+        <div class="widget-content">
+          <div class="row row-size margin_from_top">
+            <div class="span2 offset1" style="text-align:left">
+              <span style="font-weight:bold">Username</span>
+            </div>
+            <div class="span2">
+              <%= @customer.username %>
+            </div>
+          </div>
+          <div class="row row-size margin_from_top">
+            <div class="span2 offset1" style="text-align:left">
+              <span style="font-weight:bold">Email</span>
+            </div>
+            <div class="span2">
+              <%= @customer.email %>
+            </div>
+          </div>
+          <div class="row row-size margin_from_top">
+            <div class="span2 offset1" style="text-align:left">
+              <span style="font-weight:bold">Phone Number</span>
+            </div>
+            <div class="span2">
+              <%= @customer.phone_number %>
+            </div>
+          </div>
+          <div class="row row-size margin_from_top">
+            <div class="span2 offset1" style="text-align:left">
+              <span style="font-weight:bold">Address</span>
+            </div>
+            <div class="span2">
+              <%= @customer.address %>
+            </div>
+          </div>
+          <div class="row row-size margin_from_top">
+            <div class="span2 offset1" style="text-align:left">
+              <span style="font-weight:bold">City/Town</span>
+            </div>
+            <div class="span2">
+              <%= @customer.city %>
+            </div>
+          </div>
+          <div class="row row-size margin_from_top">
+            <div class="span2 offset1" style="text-align:left">
+              <span style="font-weight:bold">State/Province</span>
+            </div>
+            <div class="span2">
+              <%= @customer.state %>
+            </div>
+          </div>
+          <div class="row row-size margin_from_top">
+            <div class="span2 offset1" style="text-align:left">
+              <span style="font-weight:bold">Zip Code</span>
+            </div>
+            <div class="span2">
+              <%= @customer.zip_code%>
+            </div>
+          </div>
+          <div class="row row-size margin_from_top">
+            <div class="span2 offset1" style="text-align:left">
+              <span style="font-weight:bold">Country</span>
+            </div>
+            <div class="span2">
+              <%= @customer.country %>
+            </div>
+          </div>
+        </div>
+        <div class='span8 offset2'>
+          <%= link_to 'Update Profile', edit_customer_registration_path, :class => 'btn btn-primary' %>  
+          <%= link_to 'Back', customer_dashboard_index_path, :class => 'btn btn-inverse' %>  
+        </div>
+      </div>
+    </div>
+    <div class="span3"></div>
+  </div>
+</div>
